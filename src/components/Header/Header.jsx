@@ -14,7 +14,7 @@ function Header() {
                     <Link to="/borrow">Quản lý mượn sách</Link>
                 </div>
                 <div className="hover:pointer hover:text-blue-500">
-                    <Link to="/users">Quản lý người dùng</Link>
+                    <Link to="/members">Quản lý người dùng</Link>
                 </div>
             </div>
         </>
