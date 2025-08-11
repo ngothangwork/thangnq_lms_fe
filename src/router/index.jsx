@@ -6,6 +6,7 @@ import ManageLayout from "../layout/ManageLayout.jsx";
 import Error from "../pages/Error/Error.jsx";
 import AuthorPage from "../pages/Author/AuthorPage.jsx";
 import MemberPage from "../pages/Member/MemberPage.jsx";
+import BorrowingPage from "../pages/Borrowing/BorrowingPage.jsx";
 
 const router = createBrowserRouter([
     {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
             {
                 path: "members",
                 element: <MemberPage />,
+            },
+            {
+                path: "borrows",
+                element: <BorrowingPage />,
             },
             {
                 path: "book-list",
