@@ -1,12 +1,35 @@
-# React + Vite
+Library Management System - Frontend (Vite + React + TailwindCSS)
+Ứng dụng frontend cho hệ thống quản lý thư viện, xây dựng bằng Vite + React + TailwindCSS.
+Công nghệ sử dụng
+- Vite
+- React
+- TailwindCSS
+- Axios (gọi API)
+Chức năng chính
+- Hiển thị danh sách sách từ backend
+- Thêm, sửa, xóa sách
+- Quản lý độc giả
+- Chức năng mượn / trả sách
+- Kết nối tới API Spring Boot backend
+Cài đặt & Chạy project
+1. Clone repo:
+git clone https://github.com/your-username/library-frontend.git
+cd library-frontend
+2. Cài dependencies:
+npm install
+3. Chạy dev server:
+npm run dev
+Mặc định chạy tại: http://localhost:5173
+Cấu hình API
+Chỉnh sửa file `src/config.js` để trỏ tới backend API:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+export const BASE_URL = "http://localhost:8080/api";
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Roadmap
+[x] Hiển thị danh sách sách
+[x] CRUD sách
+[x] CRUD độc giả
+[ ] Đăng nhập / phân quyền
+[ ] Responsive UI với Tailwind
+Tác giả
+Ngô Thắng – GitHub: https://github.com/your-username
